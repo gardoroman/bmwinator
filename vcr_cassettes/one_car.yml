@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.bensbenzes.com/api/v1/cars/active/68
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 01 Mar 2017 22:50:13 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Wed, 01 Mar 2017 22:50:12 GMT
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: ! '{"id":68,"make":"Honda","model":"Civic","year":"1996","color":"Blue","vin":"XXXXXXXXXXXXXX","dealer_id":34}'
+    http_version:
+  recorded_at: Wed, 01 Mar 2017 22:50:12 GMT
+recorded_with: VCR 3.0.3
